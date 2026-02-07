@@ -1,10 +1,10 @@
 # Superpowers Lab
 
-Experimental skills for [Claude Code Superpowers](https://github.com/obra/superpowers) - new techniques and tools under active development.
+Experimental skills for Claude Code Superpowers — new techniques and tools under active development.
 
-## What is this?
+> Maintained fork of [obra/superpowers-lab](https://github.com/obra/superpowers-lab) by [@cameronsjo](https://github.com/cameronsjo).
 
-This plugin contains experimental skills that extend Claude Code's capabilities with new techniques that are still being refined and tested. These skills are functional but may evolve based on real-world usage and feedback.
+Functional but evolving skills that extend Claude Code's capabilities. May change based on real-world usage.
 
 ## Current Skills
 
@@ -75,15 +75,11 @@ Skills in this plugin are:
 - 📝 May evolve based on usage
 - 🔬 Open to feedback and improvements
 
-## Contributing
-
-Found a bug or have an improvement? Please open an issue or PR!
-
-## Related Projects
-
-- [superpowers](https://github.com/obra/superpowers) - Core skills library for Claude Code
-- [superpowers-chrome](https://github.com/obra/superpowers-chrome) - Browser automation skills
-
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Support
+
+- **Issues**: https://github.com/cameronsjo/superpowers-lab/issues
+- **Upstream**: https://github.com/obra/superpowers-lab
