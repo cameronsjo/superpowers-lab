@@ -85,21 +85,17 @@ Specify working directory when creating session:
 tmux new-session -d -s git_session -c /path/to/repo git rebase -i HEAD~3
 ```
 
-### Helper Wrapper
+### Helper Pattern
 
-For easier use, see `/home/jesse/git/interactive-command/tmux-wrapper.sh`:
+For complex workflows, wrap the tmux commands in a shell function:
 ```bash
-# Start session
-/path/to/tmux-wrapper.sh start <session-name> <command> [args...]
-
-# Send input
-/path/to/tmux-wrapper.sh send <session-name> 'text' Enter
-
-# Capture current state
-/path/to/tmux-wrapper.sh capture <session-name>
-
-# Stop
-/path/to/tmux-wrapper.sh stop <session-name>
+tmux-run() {
+  local session="$1" cmd="$2"; shift 2
+  tmux new-session -d -s "$session" "$cmd" "$@"
+}
+tmux-send() { tmux send-keys -t "$1" "${@:2}"; }
+tmux-read() { tmux capture-pane -t "$1" -p; }
+tmux-stop() { tmux kill-session -t "$1"; }
 ```
 
 ## Common Patterns
