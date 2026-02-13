@@ -1,0 +1,20 @@
+{
+  "name": "superpowers-lab-dev",
+  "description": "Development marketplace for Superpowers experimental skills",
+  "owner": {
+    "name": "Jesse Vincent",
+    "email": "jesse@fsck.com"
+  },
+  "plugins": [
+    {
+      "name": "superpowers-lab",
+      "description": "Experimental skills: tmux automation, MCP server discovery, duplicate detection, Slack messaging",
+      "version": "0.3.0",
+      "source": "./",
+      "author": {
+        "name": "Jesse Vincent",
+        "email": "jesse@fsck.com"
+      }
+    }
+  ]
+}
