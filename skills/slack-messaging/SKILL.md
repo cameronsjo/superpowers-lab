@@ -3,6 +3,10 @@ name: slack-messaging
 description: Use when asked to send or read Slack messages, check Slack channels, test Slack integrations, or interact with a Slack workspace from the command line.
 user-invocable: false
 allowed-tools: Bash(slackcli:*, curl:*)
+license: MIT
+metadata:
+  author: obra
+  version: "1.0"
 ---
 
 # Slack Messaging via slackcli

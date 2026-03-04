@@ -1,6 +1,10 @@
 ---
 name: finding-duplicate-functions
 description: Use when auditing a codebase for semantic duplication - functions that do the same thing but have different names or implementations. Especially useful for LLM-generated codebases where new functions are often created rather than reusing existing ones.
+license: MIT
+metadata:
+  author: obra
+  version: "1.0"
 ---
 
 # Finding Duplicate-Intent Functions
